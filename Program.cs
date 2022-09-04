@@ -72,29 +72,29 @@
 //Optional_task Напишите программу, которая считывает с консоли числа (по одному в строке) до тех пор, 
 //пока сумма введённых чисел не будет равна 0 и сразу после этого выводит сумму квадратов всех считанных чисел.
 //Гарантируется, что в какой-то момент сумма введённых чисел окажется равной 0, после этого считывание продолжать не нужно.
-void SumSquareNumber()
-    {
-    Console.WriteLine("Введите число:");
-    int a = Convert.ToInt32(Console.ReadLine());
-    int b = a;
-    int c = a * a;
-    int d = 0;
-    int e = d + c;
-    while (b != 0)
-        {
-        a = Convert.ToInt32(Console.ReadLine());
-        b += a;
-        c = a * a;
-        e += c;
-        d = c;
-        }
-    Console.WriteLine($"Сумма квадратов всех считанных чисел: {e}");
-    }
-try 
-    {
-    SumSquareNumber();
-    }
-catch
-    {
-    Console.WriteLine("Нужно вводить цифры!");
-    }
+// void SumSquareNumber()
+//     {
+//     Console.WriteLine("Введите число:");
+//     int a = Convert.ToInt32(Console.ReadLine());
+//     int b = a;
+//     int c = a * a;
+//     int d = 0;
+//     int e = d + c;
+//     while (b != 0)
+//         {
+//         a = Convert.ToInt32(Console.ReadLine());
+//         b += a;
+//         c = a * a;
+//         e += c;
+//         d = c;
+//         }
+//     Console.WriteLine($"Сумма квадратов всех считанных чисел: {e}");
+//     }
+// try 
+//     {
+//     SumSquareNumber();
+//     }
+// catch
+//     {
+//     Console.WriteLine("Нужно вводить цифры!");
+//     }
