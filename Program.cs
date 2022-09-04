@@ -71,44 +71,44 @@
 // PrintArray(array);
 
 //Optional_Task Написать программу сортировки массива от большего к меньшему. Массив задается размерностью N с клавиатуры, далее заполняется случайными целыми числами.
-Random rd = new Random();
-Console.Write("Введите число: ");
-int N = Convert.ToInt32(Console.ReadLine());
-int[] array = FillArray(N);
+// Random rd = new Random();
+// Console.Write("Введите число: ");
+// int N = Convert.ToInt32(Console.ReadLine());
+// int[] array = FillArray(N);
 
-int[] FillArray(int number)
-{
-    int[] array = new int[number];
-    for (int i = 0; i < N; i++)
-    {
-        array[i] = rd.Next(1, 100);
-    }
-    return array;
-}
+// int[] FillArray(int number)
+// {
+//     int[] array = new int[number];
+//     for (int i = 0; i < N; i++)
+//     {
+//         array[i] = rd.Next(1, 100);
+//     }
+//     return array;
+// }
 
-void PrintArray(int[] array)
-{
-    foreach (int i in array)
-    {
-    if (i == array[N-1]) Console.Write(i+".");
-    else Console.Write(i+", ");
-    }
-    Console.WriteLine();
-}
-void Sort(int [] array)
-{   
-    for (int i = 0; i < array.Length - 1; i++)
-    {
-        int max = i;
-        for (int j = i+1; j < array.Length; j++)
-        {
-            if (array[j] > array[max] ) max = j;
-        }
-        int help = array[i];
-        array[i] = array[max];
-        array[max] = help;
-    }
-}
-PrintArray(array);
-Sort(array);
-PrintArray(array);
+// void PrintArray(int[] array)
+// {
+//     foreach (int i in array)
+//     {
+//     if (i == array[N-1]) Console.Write(i+".");
+//     else Console.Write(i+", ");
+//     }
+//     Console.WriteLine();
+// }
+// void Sort(int [] array)
+// {   
+//     for (int i = 0; i < array.Length - 1; i++)
+//     {
+//         int max = i;
+//         for (int j = i+1; j < array.Length; j++)
+//         {
+//             if (array[j] > array[max] ) max = j;
+//         }
+//         int help = array[i];
+//         array[i] = array[max];
+//         array[max] = help;
+//     }
+// }
+// PrintArray(array);
+// Sort(array);
+// PrintArray(array);
