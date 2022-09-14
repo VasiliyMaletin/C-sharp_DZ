@@ -54,34 +54,34 @@
 // Input();
 
 //Task_52 Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
-int[,] numbers = new int [5, 3];
-void NewMatrix(int[,] matrix)
-{ 
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        for (int j = 0; j < matrix.GetLength(1); j++)
-        {
-            matrix [i, j] = new Random().Next(1, 10);
-            Console.Write(matrix[i, j]+"\t");
-        }
-        Console.WriteLine();
-    }
-    Console.WriteLine();
-} 
+// int[,] numbers = new int [5, 3];
+// void NewMatrix(int[,] matrix)
+// { 
+//     for (int i = 0; i < matrix.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < matrix.GetLength(1); j++)
+//         {
+//             matrix [i, j] = new Random().Next(1, 10);
+//             Console.Write(matrix[i, j]+"\t");
+//         }
+//         Console.WriteLine();
+//     }
+//     Console.WriteLine();
+// } 
 
-void Average(int[,] numbers)
-{
-    for (int j = 0; j < numbers.GetLength(1); j++)
-    {
-        double avg = 0; 
-        for (int i = 0; i < numbers.GetLength(0); i++)
-        {
-            avg += numbers[i, j];
-        }
-        if (j == numbers.GetLength(1) - 1) Console.Write(avg / numbers.GetLength(0)+"."); 
-        else Console.Write(avg / numbers.GetLength(0)+"; ");
-    }
-    Console.WriteLine();
-}
-NewMatrix(numbers);
-Average(numbers);
+// void Average(int[,] numbers)
+// {
+//     for (int j = 0; j < numbers.GetLength(1); j++)
+//     {
+//         double avg = 0; 
+//         for (int i = 0; i < numbers.GetLength(0); i++)
+//         {
+//             avg += numbers[i, j];
+//         }
+//         if (j == numbers.GetLength(1) - 1) Console.Write(avg / numbers.GetLength(0)+"."); 
+//         else Console.Write(avg / numbers.GetLength(0)+"; ");
+//     }
+//     Console.WriteLine();
+// }
+// NewMatrix(numbers);
+// Average(numbers);
